@@ -1,0 +1,61 @@
+{
+  "texts": [
+    {
+      "id": "andar-do-bebado",
+      "title": "O Andar do Bêbado",
+      "author": "Leonard Mlodinow",
+      "category": "Divulgação Científica / Física",
+      "coverColor": "from-cyan-500 to-blue-600",
+      "paragraphs": [
+        "Para compreender a importância do acaso em nossas vidas, é preciso primeiro desaprender.",
+        "Muitas vezes confundimos a sorte com a habilidade, e o caos com a ordem deliberada.",
+        "A nossa intuição sobre a probabilidade é frequentemente enganosa.",
+        "O cérebro humano é programado para buscar padrões, mesmo onde eles não existem.",
+        "Essa tendência cognitiva nos leva a criar narrativas confortáveis para eventos aleatórios.",
+        "Quando analisamos o sucesso ou o fracasso de projetos, empresas e carreiras, tendemos a negligenciar o enorme papel desempenhado por influências imprevisíveis e aleatórias.",
+        "Criamos heróis e vilões baseados puramente em resultados, ignorando as condições ocultas da probabilidade.",
+        "A teoria da probabilidade, originada do desejo de prever resultados em jogos de azar por matemáticos como Galileu e Pascal, expandiu-se para se tornar o alicerce fundamental da física moderna, das finanças e de nossas decisões diárias.",
+        "Controlar o acaso é uma ilusão, mas compreendê-lo nos dá uma imensa vantagem.",
+        "Permite-nos ver o mundo de forma mais clara, aceitar a variabilidade natural da vida e focar verdadeiramente naquilo que podemos influenciar: nosso próprio esforço e preparação estruturada."
+      ]
+    },
+    {
+      "id": "dom-casmurro",
+      "title": "Dom Casmurro",
+      "author": "Machado de Assis",
+      "category": "Literatura Clássica Brasileira",
+      "coverColor": "from-amber-600 to-red-800",
+      "paragraphs": [
+        "Uma noite destas, vindo da cidade para o Engenho Novo, encontrei no trem da Central um rapaz aqui do bairro, que eu conheço de vista e de chapéu.",
+        "Cumprimentou-me, sentou-se ao pé de mim, falou do tempo, dos partidos e dos congressos, e acabou recitando-me versos.",
+        "A viagem era longa, e os versos não eram inteiramente maus.",
+        "Sucedeu, porém, que, como eu estivesse cansado, fechei os olhos três ou quatro vezes; tanto bastou para que ele interrompesse a leitura e enfiasse os versos no bolso.",
+        "Como não achei assunto logo, ele levantou-se e foi para outra carruagem.",
+        "Dias depois encontrou-me na rua, chamou-me \"Dom Casmurro\", e o apelido pegou.",
+        "Casmurro não está aqui no sentido que os dicionários dão, mas no que lhe pôs o vulgo de homem calado e metido consigo.",
+        "Minha mãe era uma senhora piedosa, que queria que eu fosse padre.",
+        "Foi por essa promessa que toda a minha criação se deu em torno do seminário de São José. Mas o destino, ou Capitu, tinham outros planos.",
+        "Capitu era uma criatura extraordinária, com olhos de ressaca, que traziam em si uma força misteriosa, como o mar que arrasta tudo para o fundo.",
+        "Nossa amizade de infância floresceu em algo muito mais profundo, desafiando todas as promessas e convenções de nossa família."
+      ]
+    },
+    {
+      "id": "arte-da-guerra",
+      "title": "A Arte da Guerra",
+      "author": "Sun Tzu",
+      "category": "Estratégia & Filosofia",
+      "coverColor": "from-emerald-500 to-teal-700",
+      "paragraphs": [
+        "A arte da guerra é de vital importância para o Estado.",
+        "É uma questão de vida ou morte, uma estrada que leva à segurança ou à ruína. Portanto, é assunto que não pode ser negligenciado em hipótese alguma.",
+        "A estratégia vitoriosa consiste em analisar cinco fatores constantes: a Lei Moral, o Céu, a Terra, o Comandante e a Doutrina.",
+        "Toda atividade bélica é baseada na dissimulação.",
+        "Portanto, quando formos capazes de atacar, devemos parecer incapazes; ao utilizarmos nossas forças, devemos parecer inativos; quando estivermos perto, devemos fazer o inimigo acreditar que estamos longe.",
+        "Se o seu inimigo é de temperamento instável, tente irritá-lo. Finja estar fraco, para que ele se torne arrogante.",
+        "Se ele estiver descansando, não lhe dê paz. Se as forças dele estiverem unidas, tente separá-las.",
+        "O guerreiro inteligente impõe sua vontade ao inimigo, mas não permite que a vontade do inimigo lhe seja imposta.",
+        "A maior vitória é aquela que requer nenhuma batalha, pois vencer o inimigo sem lutar é o ápice da excelência estratégica."
+      ]
+    }
+  ]
+}
