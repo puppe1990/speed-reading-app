@@ -1,7 +1,6 @@
 {
   "runtime": "node",
   "node_version": "22",
-  "port": 4030,
   "start_command": "node src/server.mjs",
   "memory_max_mb": 400
 }
