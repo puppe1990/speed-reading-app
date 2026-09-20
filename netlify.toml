@@ -1,0 +1,31 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+
+[[redirects]]
+  from = "/logout"
+  to = "/.netlify/functions/api"
+  status = 200
+
+[[redirects]]
+  from = "/signin"
+  to = "/.netlify/functions/api"
+  status = 200
+
+[[redirects]]
+  from = "/signup"
+  to = "/.netlify/functions/api"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/api"
+  status = 200
