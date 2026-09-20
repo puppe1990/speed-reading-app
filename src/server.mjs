@@ -7,6 +7,7 @@ import { openDb } from "./db.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT ?? 4173);
+const isProduction = process.env.NODE_ENV === "production";
 
 const db = await openDb({});
 const seed = JSON.parse(readFileSync(join(here, "data/texts.json"), "utf8"));
@@ -15,7 +16,7 @@ await db.seed(seed.texts ?? []);
 const api = createApi({
   db,
   secret: process.env.SESSION_SECRET ?? "dev-secret-change-me",
-  secureCookie: false,
+  secureCookie: isProduction,
 });
 
 const STATIC_FILES = {
@@ -76,6 +77,6 @@ const server = createServer(async (req, res) => {
   res.end(result.body);
 });
 
-server.listen(port, () => {
-  console.log(`Leitor Dinâmico Imersivo: http://localhost:${port}`);
+server.listen(port, "0.0.0.0", () => {
+  console.log(`Leitor Dinâmico Imersivo: http://0.0.0.0:${port}`);
 });
