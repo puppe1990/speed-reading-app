@@ -1,0 +1,6 @@
+node_modules
+.netlify
+coverage
+package-lock.json
+src/data/*.db
+src/data/*.db-*

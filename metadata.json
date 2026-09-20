@@ -1,8 +1,0 @@
-{
-  "name": "Leitor Dinâmico Imersivo",
-  "description": "Um leitor de leitura dinâmica avançado com scroll automático e técnicas especializadas (RSVP, Chunking, Scanner Periférico e Varredura).",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
