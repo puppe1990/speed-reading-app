@@ -4,8 +4,18 @@ import { fileURLToPath } from "node:url";
 import { DEFAULT_PREFERENCES, splitParagraphs } from "./text.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const DEFAULT_URL =
-  process.env.TURSO_DATABASE_URL || `file:${join(here, "data/leitor.db")}`;
+
+function resolveDefaultUrl() {
+  const filePath = process.env.DATABASE_PATH?.trim();
+  if (filePath) {
+    return filePath.startsWith("file:") ? filePath : `file:${filePath}`;
+  }
+  return (
+    process.env.TURSO_DATABASE_URL || `file:${join(here, "data/leitor.db")}`
+  );
+}
+
+const DEFAULT_URL = resolveDefaultUrl();
 
 const COVER_COLORS = [
   "from-cyan-500 to-blue-600",
@@ -84,7 +94,11 @@ async function loadClient(databaseUrl, authToken) {
     pickClientModule(databaseUrl) === "node"
       ? await import("@libsql/client")
       : await import("@libsql/client/web");
-  return module.createClient({ url: databaseUrl, authToken });
+  const isLocal =
+    String(databaseUrl).startsWith("file:") || databaseUrl === ":memory:";
+  return module.createClient(
+    isLocal ? { url: databaseUrl } : { url: databaseUrl, authToken },
+  );
 }
 
 export function normalizeEmail(value) {
