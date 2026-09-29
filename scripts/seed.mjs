@@ -8,9 +8,19 @@ const seed = JSON.parse(
   readFileSync(resolve(here, "../src/data/texts.json"), "utf8"),
 );
 
+const filePath = process.env.DATABASE_PATH?.trim();
+const url = filePath
+  ? filePath.startsWith("file:")
+    ? filePath
+    : `file:${filePath}`
+  : process.env.TURSO_DATABASE_URL;
+
 const db = await openDb({
-  url: process.env.TURSO_DATABASE_URL,
-  authToken: process.env.TURSO_AUTH_TOKEN,
+  url,
+  authToken:
+    url && String(url).startsWith("file:")
+      ? undefined
+      : process.env.TURSO_AUTH_TOKEN,
 });
 
 await db.seed(seed.texts ?? []);
